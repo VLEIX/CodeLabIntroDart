@@ -2,6 +2,7 @@ import 'dart:math';
 import 'bicycle.dart' show Bicycle;
 import 'rectangle.dart' show Rectangle;
 import 'shape.dart';
+import 'funtional_programming.dart';
 
 void main() {
   /*
@@ -24,6 +25,7 @@ void main() {
   print(Rectangle());
   */
 
+  /*
   try {
     final circle = Shape('circle');
     final square = Shape('square');
@@ -34,4 +36,15 @@ void main() {
   } catch (err) {
     print(err);
   }
+  */
+
+  final values = [1, 2, 3, 5, 10, 50];
+
+  for (var length in values) {
+    print(scream(length));
+  }
+
+  //values.map(scream).forEach(print);
+
+  values.skip(2).take(3).map(scream).forEach(print);
 }
